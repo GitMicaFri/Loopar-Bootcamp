@@ -70,25 +70,68 @@ for (let i = 0; i < numbers2.length; i++) {
 }
 console.log(largestNumber)
 
-// 9 //
+// 9, 12 //
 
+let things = ['hammer', 'nails', 'ruler', 'screwdriver', 'screws', 'saw']
 
+//for (let i = 0; i < things.length; i++) {
+    //console.log(things[i])
+//}
 
+things.forEach(function(things, index) {
+    console.log(things, index)
+})
 
-// Här är en steg-för-steg förklaring:
+// For in Loops ///
+// 10 //
+const person = {
+    name: "John",
+    age: 30,
+    city: "New York"
+  };
 
-// let numbers2 = [1, 3, 6, 9, 99, 200, 123] - Detta är en array med sju nummer.
+  for (i = 0; i < Object.keys(person).length; i++) {
+    console.log(Object.keys(person)[i])
+  }
 
-// let largestNumber = [0]; - Detta är en variabel som initialt sätts till 0. Målet är att hitta det största numret i arrayen numbers2 och lagra det i largestNumber.
+  // For each Loops //
+  // 11 //
+  // Samma som 9 //
 
-// for (let i = 0; i < numbers2.length; i++) { ... } - Detta är en for-loop som går igenom varje element i numbers2-arrayen. i är indexet för det aktuella elementet.
+  // 12 //
+  // let är uppe i 9 //
 
-// if (numbers2[i] > largestNumber){ ... } - Detta är ett if-statement som kontrollerar om det aktuella numret (numbers2[i]) är större än det nuvarande största numret (largestNumber).
+  // 13 //
 
-// largestNumber = numbers2[i] - Om det aktuella numret är större än det nuvarande största numret, uppdateras largestNumber till det aktuella numret.
+  let j = 0
+  let text = ""
+  while (j < 1000) {
+     j++;
+console.log(j) }
 
-// console.log(largestNumber) - När loopen är klar skrivs det största numret ut i konsolen.
+// 14 //
+let deck = []
 
-// Så, om vi skulle vilja förklara koden med en mening: Koden hittar det största numret i en array. 
+let cards = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
+let colors = ['hearts', 'clubs', 'diamonds', 'spades']
 
-// Men jag har en fråga till dig 🤔. Varför tror du att largestNumber initialt sätts till 0? Vad skulle hända om vi ändrade det till ett annat nummer?
+for (let i = 0; i < colors.length; i++) {
+    for (let j = 0; j < cards.length; j++) {
+    deck.push(`${colors[i]} ${cards[j]}`)  
+} 
+}
+console.log(deck)
+ 
+
+// 15 //
+
+function printStars(totalStars) {
+    for (let i = 0; i < totalStars; i++) {
+        let stars = '';
+        for (let j = 0; j <= i; j++) {
+            stars += '*';
+          }
+          console.log(stars)
+    }
+  }
+printStars(5) // logs out 5 times in the consol
