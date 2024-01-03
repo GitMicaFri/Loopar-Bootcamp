@@ -135,3 +135,46 @@ function printStars(totalStars) {
     }
   }
 printStars(5) // logs out 5 times in the consol
+
+
+// 16 //
+let friends = [
+    {
+        name: 'Sixten',
+        likes: [
+            'bananas',
+            'strawberries',
+            'blueberries'
+        ]
+    },
+    {
+        name: 'Khalid',
+        likes: [
+            'papaya',
+            'pear',
+            'pineapple'
+        ]
+    },
+    {
+        name: 'Lisa',
+        likes: [
+            'raspberries',
+            'watermelon',
+            'apple'
+        ]
+    }
+]
+
+for ( let i = 0; i <Object.keys(friends).length; i++) {
+    for (let j = 0; j < friends[i].likes.length; j++) {
+        console.log(friends[i].likes[j]);
+    }
+    //console.log(friends[i].likes)
+}
+
+// 17 //
+const selectRandomPassword = (passwords) => {
+    let randomIndex = Math.floor(Math.random() * passwords.length);
+   return passwords[randomIndex]
+}
+console.log(selectRandomPassword(passwords))
